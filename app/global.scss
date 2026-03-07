@@ -1,5 +1,184 @@
+html {
+  font-size: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+header {
+  padding: 2.7rem;
+  position: absolute;
+  width: 100%;
+  .container {
+    background-color: transparent;
+    max-width: 140rem;
+    width: 100%;
+    margin-inline: auto;
+    padding: 0 2rem;
+    .headerMain {
+      padding-inline: 3.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 2.4rem;
+      border: 1px solid rgba(255, 255, 255, 0);
+      background: rgba(255, 255, 255, 0.1);
+      background-blend-mode: plus-lighter;
+      box-shadow:
+        3.3px -10.2px 48px -12px rgba(0, 0, 0, 0.15),
+        0.55px -1.7px 12px -8px rgba(0, 0, 0, 0.15),
+        -0.671px 2.074px 9.76px 0 rgba(255, 255, 255, 0.15) inset,
+        -0.396px 1.224px 4.88px 0 rgba(255, 255, 255, 0.15) inset;
+      backdrop-filter: blur(9.920000076293945px);
+
+      .headerLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          background-color: transparent;
+          object-fit: cover;
+          aspect-ratio: 254/87.6;
+        }
+      }
+      nav {
+        margin-left: 3.2rem;
+        flex-shrink: 0;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 100%;
+          left: 0;
+          display: flex;
+          align-items: center;
+          gap: 3.1rem;
+
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            position: relative;
+            a {
+              cursor: pointer;
+              text-decoration: none;
+              color: #fff;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              letter-spacing: -0.032rem;
+            }
+            img {
+              object-fit: cover;
+              flex-shrink: 0;
+              width: 2.4rem;
+              aspect-ratio: 1/1;
+            }
+            ul {
+              padding: 2rem;
+              gap: 1.5rem 4rem;
+              min-width: fit-content;
+              border-radius: 2rem;
+              align-items: center;
+              background-color: #fff;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              position: absolute;
+              top: calc(100% + 2rem);
+              left: 0;
+              transform: translateX(-45%);
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 55%;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background-color: #ccc;
+              }
+              li {
+                justify-content: start;
+                text-wrap: nowrap;
+                list-style: none;
+                a {
+                  color: #0397d6;
+                }
+              }
+            }
+          }
+        }
+      }
+      .headerRight {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        width: 100%;
+        gap: 2.8rem;
+        padding: 3.7rem;
+
+        .leftItems {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1.2rem;
+          .supportButton {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7rem;
+            background: var(--Main-Color-01, #0faedd);
+            width: fit-content;
+            padding: 2rem;
+            height: 4.4rem;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.032rem;
+          }
+        }
+
+        .rightItems {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 2.2rem;
+          .languageChanger {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: transparent;
+            border-color: transparent;
+            color: #fff;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.013rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.heroSection {
+  video {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
 }
