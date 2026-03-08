@@ -9,15 +9,16 @@ html {
 }
 
 header {
-  padding: 2.7rem;
   position: absolute;
   width: 100%;
+  z-index: 999;
+  padding: 2.7rem;
   .container {
     background-color: transparent;
+    padding: 3.3rem 3.6rem;
     max-width: 140rem;
     width: 100%;
     margin-inline: auto;
-    padding: 0 2rem;
     .headerMain {
       padding-inline: 3.7rem;
       display: flex;
@@ -48,8 +49,6 @@ header {
         margin-left: 3.2rem;
         flex-shrink: 0;
         ul {
-          display: flex;
-          align-items: center;
           justify-content: center;
           top: 100%;
           left: 0;
@@ -91,7 +90,7 @@ header {
               position: absolute;
               top: calc(100% + 2rem);
               left: 0;
-              transform: translateX(-45%);
+              transform: translateX(-41%);
 
               &::after {
                 content: "";
@@ -119,11 +118,9 @@ header {
         display: flex;
         align-items: center;
         justify-content: start;
-
+        margin-left: 7.2rem;
         width: 100%;
         gap: 2.8rem;
-        padding: 3.7rem;
-
         .leftItems {
           display: flex;
           justify-content: center;
