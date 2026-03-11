@@ -11,6 +11,7 @@ const NavItem = ({ item }) => {
     >
       <a href={item.href}>{item.label}</a>
       <img src="/chevronDown.svg" alt="chevron" />
+      <div className="block"></div>
       <ul className={isOpen ? "open" : ""}>
         {item.subLinks.map((sub, index) => (
           <li key={index}>

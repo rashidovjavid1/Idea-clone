@@ -61,6 +61,14 @@ header {
             justify-content: center;
             list-style: none;
             position: relative;
+
+            .block {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              height: 5rem;
+            }
             a {
               cursor: pointer;
               text-decoration: none;
@@ -70,6 +78,11 @@ header {
               font-weight: 600;
               line-height: normal;
               letter-spacing: -0.032rem;
+              transition: 0.5s ease all;
+
+              &:hover {
+                color: #0397d6;
+              }
             }
             img {
               object-fit: cover;
@@ -82,6 +95,7 @@ header {
               transform: rotate(180deg);
             }
             ul {
+              top: calc(100% + 2rem);
               display: none;
               padding: 2rem;
               gap: 1.5rem 4rem;
@@ -91,8 +105,7 @@ header {
               background-color: #fff;
               grid-template-columns: 1fr 1fr;
               position: absolute;
-              top: 100%;
-              left: 0;
+              left: -100;
 
               &.open {
                 display: grid;
@@ -284,6 +297,32 @@ header {
             }
           }
         }
+
+        .discoverButton {
+          align-items: center;
+          gap: 2rem;
+          width: fit-content;
+          display: flex;
+          text-decoration: none;
+          &:hover img {
+            transform: translateX(5px);
+          }
+          span {
+            color: #0397d6;
+            letter-spacing: -0.032rem;
+            font-family: Albert Sans;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          img {
+            flex-shrink: 0;
+            transition: transform 0.3s ease-in-out;
+            scale: 0.8;
+          }
+        }
       }
 
       .bigIdeaRight {
@@ -296,6 +335,60 @@ header {
             height: 100%;
             scale: 0.7;
           }
+        }
+      }
+    }
+  }
+}
+
+.ourProjects {
+  background: #e7e8de66;
+  padding: 9.6rem 0;
+  position: relative;
+
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .ourProjectsMain {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4.3rem;
+      display: flex;
+
+      .ourProjectsTitle {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.1rem;
+        display: flex;
+        h2 {
+          color: #000;
+          letter-spacing: -0.088rem;
+          font-family: Albert Sans;
+          font-size: 4.4rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+
+          span {
+            color: #888;
+            font-weight: 500;
+          }
+        }
+
+        p {
+          color: #000;
+          text-align: center;
+          letter-spacing: -0.032rem;
+          max-width: 70%;
+          font-family: Albert Sans;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.5rem;
         }
       }
     }

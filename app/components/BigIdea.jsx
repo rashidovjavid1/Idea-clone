@@ -2,6 +2,7 @@
 
 import React from "react";
 import { ideaItems } from "../constants/ideaItems";
+import Link from "next/link";
 
 const BigIdea = () => {
   return (
@@ -38,6 +39,10 @@ const BigIdea = () => {
                 </div>
               ))}
             </div>
+            <Link href="/about" className="discoverButton">
+              <span>Discover more</span>
+              <img src="/moreButton.svg" alt="Discover More" />
+            </Link>
           </div>
           <div className="bigIdeaRight">
             <div className="bigIdeaGif">
