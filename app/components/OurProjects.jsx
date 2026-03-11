@@ -38,6 +38,10 @@ const OurProjects = () => {
               </div>
             ))}
           </div>
+          <Link href="/about" className="discoverButton">
+            <span>Discover more</span>
+            <img src="/moreButton.svg" alt="Discover More" />
+          </Link>
         </div>
       </div>
     </section>
