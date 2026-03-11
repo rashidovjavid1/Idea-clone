@@ -20,22 +20,22 @@ const OurProjects = () => {
           </div>
           <div className="ourProjectsCards">
             {cardItems.map((item, index) => (
-              <Link key={index} href={item.link}>
+              <div key={index} className="ourProjectsCard">
                 <div className="ourProjectCardInner">
                   <div className="cardFront">
                     <div className="icon">
                       <img src={item.image} alt={item.label} />
-                      <h3>{item.label}</h3>
-                      <span>explore more</span>
                     </div>
+                    <h3>{item.label}</h3>
+                    <span>explore more</span>
                   </div>
+
                   <div className="cardBack">
-                    <div className="icon">
-                      <img src={item.backImage} alt={item.label} />
-                    </div>
+                    <img src={item.backImage} alt={item.label} />
+                    <h3>{item.label}</h3>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
