@@ -184,3 +184,120 @@ header {
     aspect-ratio: 16/9;
   }
 }
+
+.bigIdea {
+  padding: 8.1rem;
+  position: relative;
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .bigIdeaMain {
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 9.6rem;
+      display: flex;
+
+      .bigIdeaLeft {
+        z-index: 3;
+        flex-direction: column;
+        gap: 5.6rem;
+        width: 50%;
+        padding-top: 5.6rem;
+        display: flex;
+        position: relative;
+
+        .bigIdeaLeftTop .contentFirst {
+          flex-direction: column;
+          gap: 1.7rem;
+          display: flex;
+
+          h2 {
+            color: #888;
+            letter-spacing: -0.088rem;
+            font-size: 4.4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            strong {
+              color: #000;
+              letter-spacing: -0.088rem;
+              font-family: Albert Sans;
+              font-size: 4.4rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+          p {
+            color: #000;
+            letter-spacing: -0.032rem;
+            opacity: 0.8;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.5rem;
+          }
+        }
+
+        .bigIdeaItems {
+          flex-wrap: wrap;
+          align-items: flex-start;
+          gap: 4.7rem;
+          display: flex;
+
+          .bigIdeaItem {
+            align-items: center;
+            gap: 3.1rem;
+            width: calc(50% - 2.35rem);
+            display: flex;
+
+            .ideaIcon {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+            .ideaDescription {
+              flex-direction: column;
+              gap: 0.6rem;
+              display: flex;
+
+              span {
+                color: #000;
+                letter-spacing: -0.064rem;
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+
+              p {
+                color: #000;
+                letter-spacing: -0.032rem;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 2.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      .bigIdeaRight {
+        width: 50%;
+        .bigIdeaGif {
+          height: 58.5rem;
+          video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            scale: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

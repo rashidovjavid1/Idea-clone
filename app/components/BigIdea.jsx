@@ -1,26 +1,43 @@
 "use client";
 
 import React from "react";
+import { ideaItems } from "../constants/ideaItems";
 
 const BigIdea = () => {
   return (
-    <section className="BigIdea">
+    <section className="bigIdea">
       <div className="container">
         <div className="bigIdeaMain">
           <div className="bigIdeaLeft">
             <div className="bigIdeaLeftTop">
-              <h1 className="heroText1">What is the</h1>
-              <h1>Big IDEA?</h1>
-              <p>
-                Our mission is to create real and virtual communities of youth
-                at the regional and international levels, to develop that
-                community through open dialogues that provide information and
-                make practical calls on environmental protection, and to ensure
-                that each member of this community grows as a leader in order to
-                carry out environmental education work on the ground.
-              </p>
+              <div className="contentFirst">
+                <h2>
+                  What is the <strong>Big IDEA?</strong>
+                </h2>
+
+                <p>
+                  Our mission is to create real and virtual communities of youth
+                  at the regional and international levels, to develop that
+                  community through open dialogues that provide information and
+                  make practical calls on environmental protection, and to
+                  ensure that each member of this community grows as a leader in
+                  order to carry out environmental education work on the ground.
+                </p>
+              </div>
             </div>
-            p
+            <div className="bigIdeaItems">
+              {ideaItems.map((item, index) => (
+                <div key={index} className="bigIdeaItem">
+                  <div className="ideaIcon">
+                    <img src={item.image} alt={item.description} />
+                  </div>
+                  <div className="ideaDescription">
+                    <span>{item.count}</span>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="bigIdeaRight">
             <div className="bigIdeaGif">
