@@ -12,13 +12,15 @@ const Hero = () => {
       </video>
       <div className="container">
         <div className="heroMain">
-          <h1>
-            <strong>One</strong>
-            <em>Earth</em>
-            <strong>,</strong>
-            <strong>One</strong>
-            <em>Future</em>
-          </h1>
+          <div className="heroDiv">
+            <h1>
+              <strong>One </strong>
+              <em>Earth </em>
+              <strong>, </strong>
+              <strong>One </strong>
+              <em>Future </em>
+            </h1>
+          </div>
           <div className="bannerDescription">
             <p>
               Nature is the very foundation of human happiness. Therefore, we

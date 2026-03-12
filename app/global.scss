@@ -191,43 +191,63 @@ header {
 }
 
 .heroSection {
+  position: relative;
   video {
-    position: absolute;
     width: 100%;
     object-fit: cover;
     aspect-ratio: 16/9;
+    display: block;
   }
 
   .container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: absolute;
     max-width: 140rem;
+    width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
 
     .heroMain {
-      z-index: 0;
+      position: absolute;
+      bottom: 18.6rem;
+      left: 50%;
+      top: 40%;
+      transform: translateX(-50%);
+      z-index: 1;
+      display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 0.8rem;
-      margin-top: 6.1rem;
-      position: relative;
-
-      h1 {
-        color: #fff;
-        letter-spacing: -0.108rem;
-        font-size: 5.4rem;
-        font-style: normal;
-        font-weight: 200;
-        line-height: normal;
-      }
-
-      strong {
+      .heroDiv {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        h1 {
+          color: #fff;
+          font-size: 5.4rem;
+          font-style: italic;
+          font-weight: 300;
+          line-height: normal;
+          letter-spacing: -0.108rem;
+        }
+
+        strong {
+          color: #fff;
+          text-align: center;
+          font-size: 5.4rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.108rem;
+        }
       }
 
       .bannerDescription {
-        max-width: 30%;
-
+        max-width: 60%;
         p {
           color: #fff;
           letter-spacing: -0.032rem;
@@ -236,6 +256,7 @@ header {
         }
       }
       .moreButton {
+        text-decoration: none;
         background: #fff6;
         border: 1px solid #adadad;
         border-radius: 7rem;
@@ -251,6 +272,19 @@ header {
           background 0.3s ease-in-out,
           border-color 0.3s ease-in-out;
         display: flex;
+
+        span {
+          color: #fff;
+          letter-spacing: -0.032rem;
+          font-family: Albert Sans;
+          font-size: 1.6rem;
+          font-style: normal;
+        }
+
+        &:hover {
+          background-color: #0397d6;
+          border-color: #0397d6;
+        }
       }
     }
   }
@@ -547,6 +581,7 @@ header {
               overflow: hidden;
 
               img {
+                filter: brightness(0.6);
                 border-radius: 3rem;
                 width: 100%;
                 height: 100%;
