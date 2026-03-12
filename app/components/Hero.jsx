@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -9,6 +10,26 @@ const Hero = () => {
           type="video/mp4"
         />
       </video>
+      <div className="container">
+        <div className="heroMain">
+          <h1>
+            <strong>One</strong>
+            <em>Earth</em>
+            <strong>,</strong>
+            <strong>One</strong>
+            <em>Future</em>
+          </h1>
+          <div className="bannerDescription">
+            <p>
+              Nature is the very foundation of human happiness. Therefore, we
+              all must protect and cherish it!
+            </p>
+          </div>
+          <Link href="/about" className="moreButton">
+            <span>Actions for a healthy planet</span>
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };

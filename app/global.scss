@@ -192,9 +192,67 @@ header {
 
 .heroSection {
   video {
+    position: absolute;
     width: 100%;
     object-fit: cover;
     aspect-ratio: 16/9;
+  }
+
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .heroMain {
+      z-index: 0;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-top: 6.1rem;
+      position: relative;
+
+      h1 {
+        color: #fff;
+        letter-spacing: -0.108rem;
+        font-size: 5.4rem;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+      }
+
+      strong {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .bannerDescription {
+        max-width: 30%;
+
+        p {
+          color: #fff;
+          letter-spacing: -0.032rem;
+          font-size: 1.6rem;
+          font-style: normal;
+        }
+      }
+      .moreButton {
+        background: #fff6;
+        border: 1px solid #adadad;
+        border-radius: 7rem;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        height: 4.4rem;
+        margin-top: 6.1rem;
+        padding: 0 2.6rem;
+        font-weight: 600;
+        line-height: normal;
+        transition:
+          background 0.3s ease-in-out,
+          border-color 0.3s ease-in-out;
+        display: flex;
+      }
+    }
   }
 }
 
@@ -544,16 +602,16 @@ header {
           }
 
           &::before {
-            bottom: 0;
-            left: 0;
+            bottom: -0.5rem;
+            left: -0.5rem;
             border-bottom: 10px solid;
             border-left: 9.3px solid;
             border-radius: 0 0 0 50%;
           }
 
           &::after {
-            top: 0rem;
-            right: 0rem;
+            top: -0.5rem;
+            right: -0.5rem;
             border-top: 10px solid;
             border-right: 9.3px solid;
             border-radius: 0 50% 0;
@@ -730,6 +788,8 @@ header {
                   line-height: normal;
                   letter-spacing: -0.039rem;
                   text-decoration: none;
+                  bottom: 3.73rem;
+                  position: absolute;
 
                   &:hover img {
                     transform: translateX(5px);
@@ -755,6 +815,8 @@ header {
                 }
 
                 p {
+                  position: absolute;
+                  top: 9rem;
                   color: #fff;
                   letter-spacing: -0.028rem;
                   text-overflow: ellipsis;
@@ -792,7 +854,7 @@ header {
           h3 {
             color: #000;
             letter-spacing: -0.048rem;
-            -webkit-line-clamp: 3;
+            line-clamp: 3;
             text-overflow: ellipsis;
             -webkit-box-orient: vertical;
             font-size: 2.4rem;
@@ -834,4 +896,7 @@ header {
       }
     }
   }
+}
+
+.mapSection {
 }

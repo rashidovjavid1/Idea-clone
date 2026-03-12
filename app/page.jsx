@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import BigIdea from "./components/BigIdea";
 import OurProjects from "./components/OurProjects";
 import Blogs from "./components/Blogs";
+import NationalParks from "./components/NationalParks";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <BigIdea />
       <OurProjects />
       <Blogs />
+      <NationalParks />
     </div>
   );
 };
