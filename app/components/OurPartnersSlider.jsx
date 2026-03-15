@@ -1,17 +1,29 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode } from "swiper/modules";
 
 import "swiper/css";
+import "swiper/css/autoplay";
 import { ourPartners } from "../constants/ourPartners";
 
 export default () => {
   return (
     <Swiper
-      autoplay={2000}
-      spaceBetween={60}
+      modules={[Autoplay, FreeMode]}
+      loop={true}
+      autoplay={{
+        delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+        waitForTransition: true,
+        stopOnLastSlide: true,
+        waitForTransition: true,
+      }}
+      speed={3000}
+      waitForTransition={false}
+      spaceBetween={30}
       slidesPerView={6}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      pauseOnMouseEnter={true}
     >
       {ourPartners.map((item, index) => (
         <SwiperSlide key={index} className="swiperElement">

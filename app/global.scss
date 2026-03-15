@@ -977,16 +977,49 @@ header {
   .ourPartnersSectionAutoSlider {
     width: 100%;
     overflow: hidden;
-    img {
-      height: 10rem;
-      aspect-ratio: 23/25;
-      filter: grayscale(100%);
-      transition: ease 0.5s all;
-      object-fit: contain;
+    .sliderContainer {
+      overflow: hidden;
+      width: 100%;
+      margin: 0 auto;
+      img {
+        cursor: pointer;
+        height: 10rem;
+        aspect-ratio: 23/25;
+        filter: grayscale(100%);
+        transition: ease 0.5s all;
+        object-fit: contain;
 
-      &:hover {
-        filter: grayscale(0);
+        &:hover {
+          filter: grayscale(0);
+        }
       }
+    }
+  }
+  .seeMoreButton {
+    align-items: center;
+    gap: 2rem;
+    width: fit-content;
+    display: flex;
+    transition: ease 0.5s all;
+    text-decoration: none;
+
+    &:hover img {
+      transform: translateX(5px);
+    }
+
+    span {
+      color: #0397d6;
+      letter-spacing: -0.032rem;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    img {
+      flex-shrink: 0;
+      transition: transform 0.3s ease-in-out;
+      scale: 0.8;
     }
   }
 }
