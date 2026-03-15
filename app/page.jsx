@@ -5,6 +5,7 @@ import OurProjects from "./components/OurProjects";
 import Blogs from "./components/Blogs";
 import NationalParks from "./components/NationalParks";
 import OurPartners from "./components/OurPartners";
+import JoinUs from "./components/JoinUs";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <Blogs />
       {/* National Parks Section */}
       <OurPartners />
+      <JoinUs />
     </div>
   );
 };

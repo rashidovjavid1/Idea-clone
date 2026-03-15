@@ -1023,3 +1023,209 @@ header {
     }
   }
 }
+
+.joinUsSection {
+  display: block;
+
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .joinUsSectionMain {
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      padding: 5rem 0;
+      display: flex;
+
+      .joinUsVolunteerCard {
+        justify-content: space-between;
+        gap: 1.9rem;
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+        height: 50.8rem;
+        border-radius: 2.4rem;
+        border: 1.5px solid #17aeda;
+        padding-left: 6.5rem;
+        overflow: hidden;
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 1.6rem;
+          margin-top: 12.4rem;
+          position: relative;
+
+          h3 {
+            width: 80%;
+            color: #273b4a;
+            font-family: "Albert Sans";
+            font-size: 3.6rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.072rem;
+          }
+
+          p {
+            color: #273b4a;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140.1%;
+            letter-spacing: -0.032rem;
+          }
+
+          .joinUsButton {
+            margin-top: 5.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 2.4rem;
+            background: #0faedd;
+            width: 20rem;
+            height: 4.8rem;
+            padding: 2rem;
+
+            span {
+              text-wrap: nowrap;
+              color: #fff;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              letter-spacing: -0.032rem;
+            }
+          }
+        }
+
+        .imageContainer {
+          position: relative;
+          display: flex;
+          margin-right: 4rem;
+          height: 37rem;
+
+          &::before {
+            position: absolute;
+            width: 65rem;
+            height: 55rem;
+            transform: rotate(-40.405deg);
+            content: "";
+            border-radius: 50%;
+            background-color: #0faedd;
+          }
+
+          .image {
+            right: 0;
+            position: relative;
+            width: 30rem;
+            height: 56rem;
+
+            img {
+              object-fit: contain;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      .joinPartnerCard {
+        justify-content: space-between;
+        gap: 1.9rem;
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+        height: 50.8rem;
+        border-radius: 2.4rem;
+        border: 1.5px solid #25b74d;
+        padding-left: 6.5rem;
+        overflow: hidden;
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 1.6rem;
+          margin-top: 12.4rem;
+          position: relative;
+
+          h3 {
+            line-clamp: 2;
+            width: 100%;
+            color: #273b4a;
+            font-size: 3.6rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.072rem;
+          }
+
+          p {
+            color: #273b4a;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140.1%;
+            letter-spacing: -0.032rem;
+          }
+
+          .joinUsButton {
+            margin-top: 5.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 2.4rem;
+            background: #25b74d;
+            width: 20rem;
+            height: 4.8rem;
+            padding: 2rem;
+
+            span {
+              text-wrap: nowrap;
+              color: #fff;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              letter-spacing: -0.032rem;
+            }
+          }
+        }
+
+        .imageContainer {
+          position: relative;
+          display: flex;
+          margin-right: 4rem;
+          height: 37rem;
+
+          &::before {
+            position: absolute;
+            width: 65rem;
+            height: 55rem;
+            transform: rotate(-40.405deg);
+            content: "";
+            border-radius: 50%;
+            background-color: #25b74d;
+          }
+
+          .image {
+            right: 0;
+            position: relative;
+            width: 30rem;
+            height: 56rem;
+
+            img {
+              object-fit: contain;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
