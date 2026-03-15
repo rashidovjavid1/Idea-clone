@@ -937,3 +937,56 @@ header {
 
 .mapSection {
 }
+
+.ourPartnersSection {
+  padding: 5rem 0;
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    .ourPartnersSectionMain {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5.83rem;
+      display: flex;
+      .ourPartnersSectionTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          color: #000;
+          font-size: 4.4rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.088rem;
+          span {
+            color: rgba(136, 136, 136, 0.53);
+            text-align: center;
+            font-size: 4.4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.088rem;
+          }
+        }
+      }
+    }
+  }
+  .ourPartnersSectionAutoSlider {
+    width: 100%;
+    overflow: hidden;
+    img {
+      height: 10rem;
+      aspect-ratio: 23/25;
+      filter: grayscale(100%);
+      transition: ease 0.5s all;
+      object-fit: contain;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
