@@ -53,18 +53,20 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="social">
-                  <Link href="/instagram">
-                    <img src="/instagram.svg" alt="Instagram" />
-                  </Link>
-                  <Link href="/facebook">
-                    <img src="/facebook.svg" alt="Facebook" />
-                  </Link>
-                  <Link href="/youtube">
-                    <img src="/youTube.svg" alt="Youtube" />
-                  </Link>
-                  <Link href="/whatsapp">
-                    <img src="/whatsApp.svg" alt="Whatsapp" />
-                  </Link>
+                  <div className="socials">
+                    <Link href="/instagram">
+                      <img src="/instagram.svg" alt="Instagram" />
+                    </Link>
+                    <Link href="/facebook">
+                      <img src="/facebook.svg" alt="Facebook" />
+                    </Link>
+                    <Link href="/youtube">
+                      <img src="/youTube.svg" alt="Youtube" />
+                    </Link>
+                    <Link href="/whatsapp">
+                      <img src="/whatsApp.svg" alt="Whatsapp" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
