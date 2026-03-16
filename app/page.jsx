@@ -6,6 +6,7 @@ import Blogs from "./components/Blogs";
 import NationalParks from "./components/NationalParks";
 import OurPartners from "./components/OurPartners";
 import JoinUs from "./components/JoinUs";
+import Footer from "./components/Footer";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       {/* National Parks Section */}
       <OurPartners />
       <JoinUs />
+      <Footer />
     </div>
   );
 };

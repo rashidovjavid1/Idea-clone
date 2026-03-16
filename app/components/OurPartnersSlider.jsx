@@ -15,15 +15,12 @@ export default () => {
         delay: 0,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
-        waitForTransition: true,
         stopOnLastSlide: true,
-        waitForTransition: true,
+        waitForTransition: false,
       }}
       speed={3000}
-      waitForTransition={false}
       spaceBetween={30}
       slidesPerView={6}
-      pauseOnMouseEnter={true}
     >
       {ourPartners.map((item, index) => (
         <SwiperSlide key={index} className="swiperElement">
