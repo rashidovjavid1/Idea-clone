@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
               <div className="bottom">
                 <div className="contact">
-                  <div className="contactItem">
+                  <div className="contactItem ">
                     <p>Nature Emergency Line</p>
                     <Link href="/call">
                       <img src="/telephone.svg" alt="Telephone" />
@@ -47,9 +47,9 @@ const Footer = () => {
                   </div>
                   <div className="contactItem">
                     <p>Address:</p>
-                    <Link href="/address">
+                    <div>
                       <span>AZ 1005,Baku,Azerbaijan pr,14</span>
-                    </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="social">
@@ -75,12 +75,14 @@ const Footer = () => {
             </div>
             <div className="privacyPolicy">
               <Link href="/privacy">Privacy policy</Link>
-              <Link href="/terms">Terms of use</Link>
+              <Link href="/terms"> Terms of use</Link>
             </div>
             <div className="developedBy">
               <p>Site by</p>
               <Link href="https://onestudio.az/">
-                <img src="/oneLogo.svg" alt="One Studio" />
+                <span>
+                  <img src="/oneLogo.svg" alt="One Studio" />
+                </span>
               </Link>
             </div>
           </div>
