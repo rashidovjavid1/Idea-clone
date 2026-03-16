@@ -1510,6 +1510,8 @@ footer {
                 align-items: center;
                 gap: 1.44rem;
                 display: flex;
+                transition: ease 0.5s all;
+
                 a {
                   border: 0.121rem solid #c6dbe0;
                   border-radius: 50%;
@@ -1518,8 +1520,17 @@ footer {
                   align-items: center;
                   width: 3.6407rem;
                   height: 3.468rem;
-                  transition: all 0.3s ease-in-out;
+                  transition: all 0.5s ease-in-out;
                   display: flex;
+
+                  &:hover {
+                    background-color: #0397d6;
+                    border-color: #0397d6;
+
+                    img {
+                      filter: brightness(0) invert(1);
+                    }
+                  }
                 }
               }
             }
