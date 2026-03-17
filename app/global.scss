@@ -207,6 +207,12 @@ header.header--dark {
       color: #0397d6;
     }
   }
+
+  .container .headerMain .headerLogo {
+    svg :first-child {
+      fill: #000;
+    }
+  }
 }
 
 .heroSection {

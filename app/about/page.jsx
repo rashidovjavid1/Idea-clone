@@ -4,7 +4,7 @@ import "./about.scss";
 const page = () => {
   return (
     <div className="aboutPage">
-      <dic className="container">
+      <div className="container">
         <div className="breadCrumb">
           <ul>
             <li>
@@ -15,7 +15,7 @@ const page = () => {
             </li>
           </ul>
         </div>
-      </dic>
+      </div>
     </div>
   );
 };

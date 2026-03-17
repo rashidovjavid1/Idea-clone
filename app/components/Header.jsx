@@ -5,18 +5,19 @@ import { navLinks } from "../constants/navLinks";
 import { darkPages } from "../constants/darkPages";
 import NavItem from "./NavItem";
 import Link from "next/link";
-import HeaderLogo from "./HeaderLogo";
+import HeaderLogo from "@/public/headerLogo.svg";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
   const pathName = usePathname();
+  const isDark = darkPages.includes(pathName);
   return (
-    <header className={darkPages.includes(pathName) ? "header--dark" : ""}>
+    <header className={`${isDark ? "header--dark" : ""}`}>
       <div className="container">
         <div className="headerMain">
           <div className="headerLogo">
             <Link href="/">
-              <HeaderLogo isDark={darkPages.includes(pathName)} />
+              <HeaderLogo />
             </Link>
           </div>
           <nav>
