@@ -1,8 +1,12 @@
 .aboutPage {
   padding: 0 0 7.8rem;
-
   .container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
     .breadCrumb {
+      margin-top: 2.8rem;
+
       ul {
         display: flex;
         align-items: center;

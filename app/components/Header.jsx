@@ -6,6 +6,8 @@ import { darkPages } from "../constants/darkPages";
 import NavItem from "./NavItem";
 import Link from "next/link";
 import HeaderLogo from "@/public/headerLogo.svg";
+import LanguageIcon from "@/public/language.svg";
+import SearchIcon from "@/public/search.svg";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -44,11 +46,11 @@ const Header = () => {
             </div>
             <div className="rightItems">
               <Link href="/search">
-                <img src="/search.svg" alt="search" />
+                <SearchIcon />
               </Link>
               <div className="languageChanger">
                 <button type="button" className="languageChanger">
-                  <img src="/language.svg" alt="language" />
+                  <LanguageIcon />
                   AZ
                 </button>
               </div>

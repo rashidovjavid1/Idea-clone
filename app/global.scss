@@ -12,8 +12,8 @@ header {
   position: absolute;
   width: 100%;
   z-index: 999;
+  padding-top: 2.1rem;
   .container {
-    margin-top: 2.1rem;
     box-sizing: border-box;
     background-color: transparent;
     max-width: 140rem;
@@ -220,12 +220,18 @@ header.header--dark {
 }
 
 .heroSection {
-  position: relative;
-  video {
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-    display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .video {
+    aspect-ratio: 144/79.2;
+
+    video {
+      width: 100%;
+    }
   }
 
   .container {
