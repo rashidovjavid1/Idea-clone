@@ -198,6 +198,20 @@ header {
     }
   }
 }
+header.header--dark {
+  .container .headerMain nav ul li a {
+    color: #000;
+    transition: ease 0.5s all;
+
+    &:hover {
+      color: #0397d6;
+    }
+  }
+
+  .headerLogo img {
+    filter: invert();
+  }
+}
 
 .heroSection {
   position: relative;

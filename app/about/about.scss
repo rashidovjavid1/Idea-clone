@@ -1,0 +1,13 @@
+.aboutPage {
+  padding: 0 0 7.8rem;
+
+  .container {
+    .breadCrumb {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+  }
+}

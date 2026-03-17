@@ -1,18 +1,22 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navLinks } from "../constants/navLinks";
+import { darkPages } from "../constants/darkPages";
 import NavItem from "./NavItem";
 import Link from "next/link";
+import HeaderLogo from "./HeaderLogo";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
+  const pathName = usePathname();
   return (
-    <header>
+    <header className={darkPages.includes(pathName) ? "header--dark" : ""}>
       <div className="container">
         <div className="headerMain">
           <div className="headerLogo">
             <Link href="/">
-              <img src="/headerLogo.svg" alt="IDEA" />
+              <HeaderLogo isDark={darkPages.includes(pathName)} />
             </Link>
           </div>
           <nav>
