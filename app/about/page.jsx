@@ -11,9 +11,15 @@ const page = () => {
               <a href="">IDEA</a>
             </li>
             <li>
-              <a href="">ABOUT US</a>
+              <span>ABOUT US</span>
             </li>
           </ul>
+        </div>
+        <div className="aboutPageMain">
+          <div className="aboutDetails">
+            <div className="left"></div>
+            <div className="right"></div>
+          </div>
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ const Header = () => {
               <div className="languageChanger">
                 <button type="button" className="languageChanger">
                   <LanguageIcon />
-                  AZ
+                  <span>AZ</span>
                 </button>
               </div>
             </div>

@@ -199,6 +199,7 @@ header {
   }
 }
 header.header--dark {
+  position: static;
   .container .headerMain nav ul li a {
     color: #000;
     transition: ease 0.5s all;
@@ -206,6 +207,10 @@ header.header--dark {
     &:hover {
       color: #0397d6;
     }
+  }
+
+  header .container .headerMain .headerRight .rightItems .languageChanger {
+    color: #000;
   }
 
   .container .headerMain .headerLogo {
@@ -217,9 +222,18 @@ header.header--dark {
   .container .headerMain nav ul li svg path:first-child {
     stroke: #000;
   }
+
+  .rightItems a svg path:first-child {
+    fill: #000;
+  }
+
+  .rightItems .languageChanger span {
+    color: #000;
+  }
 }
 
 .heroSection {
+  position: relative;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -227,7 +241,7 @@ header.header--dark {
   align-items: center;
   justify-content: center;
   .video {
-    aspect-ratio: 144/79.2;
+    aspect-ratio: 144/72.3;
 
     video {
       width: 100%;
@@ -1114,6 +1128,7 @@ header.header--dark {
           }
 
           .joinUsButton {
+            border-color: #0397d6;
             margin-top: 5.2rem;
             display: flex;
             align-items: center;
@@ -1124,6 +1139,11 @@ header.header--dark {
             width: 20rem;
             height: 4.8rem;
             padding: 2rem;
+
+            &:hover {
+              background-color: white;
+              color: #0397d6;
+            }
 
             span {
               text-wrap: nowrap;
