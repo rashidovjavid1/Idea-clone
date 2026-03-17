@@ -40,7 +40,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        img {
+        svg {
           background-color: transparent;
           object-fit: cover;
           aspect-ratio: 254/87.6;
@@ -87,14 +87,14 @@ header {
                 color: #0397d6;
               }
             }
-            img {
+            svg {
               object-fit: cover;
               flex-shrink: 0;
               width: 2.4rem;
               aspect-ratio: 1/1;
               transition: transform 0.5s ease;
             }
-            &.open img {
+            &.open svg {
               transform: rotate(180deg);
             }
             ul {
@@ -212,6 +212,10 @@ header.header--dark {
     svg :first-child {
       fill: #000;
     }
+  }
+
+  .container .headerMain nav ul li svg path:first-child {
+    stroke: #000;
   }
 }
 
