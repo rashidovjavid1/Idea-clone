@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import "./about.scss";
 import { ideaItems } from "../constants/ideaItems";
 import MoreButton from "@/public/moreButton.svg";
+import { coreCards } from "../constants/coreCards";
 const page = () => {
   return (
     <div className="aboutPage">
@@ -109,7 +111,15 @@ const page = () => {
                 activity
               </h2>
             </div>
-            <div className="coreActivities"></div>
+            <div className="coreActivities">
+              {coreCards.map((item, index) => (
+                <div key={index} className="coreCard">
+                  <div className="icon">{item.icon}</div>
+                  <h3>{item.label}</h3>
+                  <div className="description">{item.description}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
