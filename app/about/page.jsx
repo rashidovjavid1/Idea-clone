@@ -34,7 +34,7 @@ const page = () => {
                 </p>
               </div>
               <div className="bigIdeaItems">
-                <div className="bigIdeaItems">
+                <div className="bigIdeaItem">
                   {ideaItems.map((item, index) => (
                     <div key={index} className="bigIdeaItem">
                       <div className="ideaIcon">
@@ -48,8 +48,8 @@ const page = () => {
                   ))}
                 </div>
               </div>
-              <div className="secondTextMain">
-                <div className="secondText">
+              <div className="bottomTextMain">
+                <div className="bottomText">
                   <h2>About the IDEA</h2>
                   <p>
                     By embracing innovation, collaboration, and environmental
@@ -66,21 +66,23 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <span>
-                IDEA is committed to protecting nature, raising awareness, and
-                building a sustainable future together.
-              </span>
+              <div className="underText">
+                <span>
+                  IDEA is committed to protecting nature, raising awareness, and
+                  building a sustainable future together.
+                </span>
+              </div>
             </div>
             <div className="right">
               <div className="rightImage">
                 <img src="/leylaAliyeva.png" alt="Leyla Aliyeva" />
               </div>
               <div className="rightBottom">
-                <div className="title">
+                <div className="rightBottomTitle">
                   <p>THE FOUNDER</p>
                   <h2>Leyla Aliyeva</h2>
                 </div>
-                <div className="text">
+                <div className="rightBottomText">
                   <p>
                     Around the world, young people are waking up to the
                     challenge of the environment. It is in our hands to create a
@@ -116,9 +118,14 @@ const page = () => {
                 <div key={index} className="coreCard">
                   <div className="icon">{item.icon}</div>
                   <h3>{item.label}</h3>
-                  <div className="description">{item.description}</div>
+                  <div className="description">
+                    <p>{item.description} </p>
+                  </div>
                 </div>
               ))}
+              <div className="coreCardLast">
+                <p>The more ’ll coming soon</p>
+              </div>
             </div>
           </div>
         </div>

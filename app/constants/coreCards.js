@@ -7,14 +7,14 @@ import Core5 from "@/public/core5.svg";
 export const coreCards = [
   {
     icon: <Core1 />,
-    label: "Enviromental Education & Awareness:",
+    label: "Environmental Education & Awareness:",
     description:
       "We believe in equipping the younger generation with enviromental knowledge and sustainable development principles to inspire lasting change.",
   },
 
   {
     icon: <Core2 />,
-    label: "Public Information & Engagament:",
+    label: "Public Information & Engagement:",
     description:
       "Education lies at the heart of our efforts to engage the public in environmental issues, encouraging individuals,groups and communities to partcipate actively in solutions.",
   },
