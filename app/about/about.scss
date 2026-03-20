@@ -69,7 +69,7 @@
           padding-top: 13rem;
 
           span {
-            color: var(--Main-Color-01, #0397d6);
+            color: #0397d6;
             font-size: 1.6rem;
             font-style: normal;
             font-weight: 800;
@@ -90,6 +90,15 @@
               font-weight: 600;
               line-height: normal;
               letter-spacing: -0.088rem;
+
+              strong {
+                color: #000;
+                font-size: 4.4rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: -0.088rem;
+              }
             }
 
             p {
@@ -104,27 +113,23 @@
           }
 
           .bigIdeaItems {
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 4.7rem;
-            display: flex;
+            display: grid;
+            margin-top: 5rem;
 
             .bigIdeaItem {
-              width: 35rem;
-              align-items: center;
+              width: 80%;
               gap: 3.1rem;
-              display: grid;
               grid-template-columns: 2fr 2fr;
+              display: grid;
+              justify-content: flex-start;
+              align-items: center;
 
               .ideaIcon {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-
+                width: 5.6997rem;
+                height: 4.8947rem;
                 img {
+                  object-fit: contain;
                   flex-shrink: 0;
-                  width: 5.6997rem;
-                  height: 4.8947rem;
                 }
               }
 

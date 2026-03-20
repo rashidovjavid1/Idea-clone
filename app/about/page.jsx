@@ -23,7 +23,10 @@ const page = () => {
             <div className="left">
               <span>About us</span>
               <div className="text">
-                <h2>What is the Big IDEA?</h2>
+                <h2>
+                  What is the
+                  <strong> Big IDEA?</strong>
+                </h2>
                 <p>
                   Our mission is to create real and virtual communities of youth
                   at the regional and international levels, to develop that
