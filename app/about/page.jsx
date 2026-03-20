@@ -4,6 +4,10 @@ import "./about.scss";
 import { ideaItems } from "../constants/ideaItems";
 import MoreButton from "@/public/moreButton.svg";
 import { coreCards } from "../constants/coreCards";
+import OurPartners from "../components/OurPartners";
+import JoinUs from "../components/JoinUs";
+import Footer from "../components/Footer";
+
 const page = () => {
   return (
     <div className="aboutPage">
@@ -133,6 +137,31 @@ const page = () => {
           </div>
         </div>
       </div>
+      <div className="missionAndVision">
+        <div className="left">
+          <h3>Our Missions:</h3>
+          <div className="text">
+            <p>
+              To inspire and empower individuals and communities to protect the
+              environment, promote sustainable practices, and create long-term
+              solutions for ecological challenges.
+            </p>
+          </div>
+        </div>
+        <div className="right">
+          <h3>Our Vision:</h3>
+          <div className="text">
+            <p>
+              A future where people and nature thrive together — where
+              environmental awareness, innovation, and responsibility lead us
+              toward a healthier planet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <OurPartners />
+      <JoinUs />
+      <Footer />
     </div>
   );
 };
