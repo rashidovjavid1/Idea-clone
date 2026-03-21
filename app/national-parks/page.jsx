@@ -16,11 +16,8 @@ const page = () => {
           </ul>
         </div>
         <div className="nationalParksMain">
-          <h1>
-            The Natural Wealth of
-            <span>Azerbaijan</span>
-          </h1>
-          <div className="nationalParksBanner">
+          <h1>The Natural Wealth of Azerbaijan</h1>
+          <div className="nationalParksTop">
             <div className="nationalParksBannerLeft">
               <div className="pageBanner">
                 <img
@@ -31,10 +28,10 @@ const page = () => {
             </div>
             <div className="nationalParksBannerRight">
               <div className="nationalParksTitle">
-                <h3>
+                <span>
                   Azerbaijan is home to one of the most diverse ecosystems in
                   the Caucasus region.
-                </h3>
+                </span>
               </div>
               <div className="nationalParksTitleDescription">
                 <p>
@@ -49,29 +46,33 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="nationalParksFilter">
-            <ul>
-              <li>List View</li>
-              <li>Map view</li>
-            </ul>
-          </div>
-          <div className="resourceCards">
-            {nationalParks.map((item, index) => (
-              <div key={index} className="resourceCard">
-                <div className="cardBanner">
-                  <img src={item.cardBanner} alt={item.cardFirstTitle} />
-                </div>
-                <div className="right">
-                  <div className="firstText">
-                    <span>{item.cardFirstTitle}</span>
-                  </div>
-                  <div className="cardTitle">
-                    <h3>{item.cardTitle}</h3>
-                    <p>{item.cardDescription}</p>
-                  </div>
+          <div className="nationalParksBottom">
+            <div className="container">
+              <div className="nationalParksFilter">
+                <button type="button">List View</button>
+                <button type="button">Map view</button>
+              </div>
+              <div className="resourceCards">
+                <div className="container">
+                  {nationalParks.map((item, index) => (
+                    <div key={index} className="resourceCard">
+                      <div className="cardBanner">
+                        <img src={item.cardBanner} alt={item.cardFirstTitle} />
+                      </div>
+                      <div className="right">
+                        <div className="firstText">
+                          <span>{item.cardFirstTitle}</span>
+                        </div>
+                        <div className="cardTitle">
+                          <h3>{item.cardTitle}</h3>
+                          <p>{item.cardDescription}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
