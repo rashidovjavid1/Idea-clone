@@ -139,22 +139,22 @@ const page = () => {
       </div>
       <div className="missionAndVision">
         <div className="left">
-          <h3>Our Missions:</h3>
-          <div className="text">
-            <p>
-              To inspire and empower individuals and communities to protect the
-              environment, promote sustainable practices, and create long-term
-              solutions for ecological challenges.
-            </p>
-          </div>
-        </div>
-        <div className="right">
           <h3>Our Vision:</h3>
           <div className="text">
             <p>
               A future where people and nature thrive together — where
               environmental awareness, innovation, and responsibility lead us
               toward a healthier planet.
+            </p>
+          </div>
+        </div>
+        <div className="right">
+          <h3>Our Mission:</h3>
+          <div className="text">
+            <p>
+              To inspire and empower individuals and communities to protect the
+              environment, promote sustainable practices, and create long-term
+              solutions for ecological challenges.
             </p>
           </div>
         </div>
