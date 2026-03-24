@@ -2,6 +2,7 @@ import "./contact.scss";
 import React from "react";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import ArrowRight from "@/public/arrowRight.svg";
 
 const page = () => {
   return (
@@ -49,25 +50,67 @@ const page = () => {
                   <span>AZ 1005,Baku,Azerbaijan pr,14</span>
                 </div>
               </div>
-            </div>
-            <div className="social">
-              <div className="socials">
-                <Link href="/instagram">
-                  <img src="/instagram.svg" alt="Instagram" />
-                </Link>
-                <Link href="/facebook">
-                  <img src="/facebook.svg" alt="Facebook" />
-                </Link>
-                <Link href="/youtube">
-                  <img src="/youTube.svg" alt="Youtube" />
-                </Link>
-                <Link href="/whatsapp">
-                  <img src="/whatsApp.svg" alt="Whatsapp" />
-                </Link>
+              <div className="social">
+                <p>Socialls:</p>
+                <div className="socials">
+                  <Link href="/instagram">
+                    <img src="/instagram.svg" alt="Instagram" />
+                  </Link>
+                  <Link href="/facebook">
+                    <img src="/facebook.svg" alt="Facebook" />
+                  </Link>
+                  <Link href="/youtube">
+                    <img src="/youTube.svg" alt="Youtube" />
+                  </Link>
+                  <Link href="/whatsapp">
+                    <img src="/whatsApp.svg" alt="Whatsapp" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="contactFormSection"></div>
+          <div className="contactFormSection">
+            <h3>Together, we can make a difference</h3>
+            <div className="contactForm">
+              <div className="inputs">
+                <div className="inputContainer">
+                  <label>Name and surname</label>
+                  <div className="input">
+                    <input
+                      type="text"
+                      placeholder="Enter your name and surname"
+                    />
+                  </div>
+                </div>
+                <div className="inputContainer">
+                  <label>Phone number</label>
+                  <div className="input">
+                    <input type="text" placeholder="Enter phone number" />
+                  </div>
+                </div>
+                <div className="inputContainer">
+                  <label>Email address</label>
+                  <div className="input">
+                    <input type="text" placeholder="Enter email address" />
+                  </div>
+                </div>
+                <div className="inputContainer">
+                  <label>Message</label>
+                  <div className="input textarea">
+                    <textarea
+                      type="text"
+                      name="message"
+                      placeholder="Write to us"
+                    ></textarea>
+                  </div>
+                </div>
+                <button type="submitButton">
+                  <span>SUBMIT</span>
+                  <ArrowRight />
+                </button>
+              </div>
+            </div>
+          </div>
           <div className="contactFormMap">
             <div className="top">
               <h3>Our Location</h3>
