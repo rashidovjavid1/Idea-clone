@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { nationalParks } from "../constants/nationalParks";
 import "./resources.scss";
 import { useState } from "react";
@@ -89,6 +90,7 @@ const page = () => {
                           <div className="cardDescription">
                             <p>{item.cardDescription}</p>
                           </div>
+                          <Link href={item.link}>{item.buttonType}</Link>
                         </div>
                       </div>
                     </div>
