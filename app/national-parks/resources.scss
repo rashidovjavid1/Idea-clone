@@ -151,7 +151,8 @@
           gap: 4.8rem;
 
           button {
-            color: #1a1a1a;
+            cursor: pointer;
+            color: #888;
             text-align: center;
             font-size: 3.6rem;
             font-style: normal;
@@ -160,13 +161,13 @@
             letter-spacing: -0.072rem;
             background-color: transparent;
             border-color: transparent;
+            transition: ease 0.5s all;
+            border-bottom: transparent;
 
-            /*  aktiv uchun -    text-align: center;
-    font-size: 3.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -.072rem; */
+            &.active {
+              color: black;
+              border-bottom: solid #0faedd;
+            }
           }
         }
       }

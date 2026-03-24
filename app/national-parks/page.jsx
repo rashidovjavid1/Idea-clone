@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+
 import { nationalParks } from "../constants/nationalParks";
 import "./resources.scss";
+import { useState } from "react";
 
 const page = () => {
+  const [view, setView] = useState("list");
   return (
     <div className="resources">
       <div className="container">
@@ -51,33 +54,47 @@ const page = () => {
         <div className="resourcesBottom">
           <div className="container">
             <div className="resourcesFilter">
-              <button type="button">List View</button>
-              <button type="button">Map view</button>
+              <button
+                className={view === "list" ? "active" : ""}
+                onClick={() => setView("list")}
+                type="button"
+              >
+                List View
+              </button>
+              <button
+                className={view === "map" ? "active" : ""}
+                onClick={() => setView("map")}
+                type="button"
+              >
+                Map view
+              </button>
             </div>
           </div>
           <div className="resourcesBottomMain">
             <div className="container">
-              <div className="resourceCards">
-                {nationalParks.map((item, index) => (
-                  <div key={index} className="resourceCard">
-                    <div className="cardBanner">
-                      <img src={item.cardBanner} alt={item.cardFirstTitle} />
-                    </div>
-                    <div className="right">
-                      <div className="firstText">
-                        <span>{item.cardFirstTitle}</span>
+              {view === "list" && (
+                <div className="resourceCards">
+                  {nationalParks.map((item, index) => (
+                    <div key={index} className="resourceCard">
+                      <div className="cardBanner">
+                        <img src={item.cardBanner} alt={item.cardFirstTitle} />
                       </div>
-                      <div className="cardTitle">
-                        <h3>{item.cardTitle}</h3>
+                      <div className="right">
+                        <div className="firstText">
+                          <span>{item.cardFirstTitle}</span>
+                        </div>
+                        <div className="cardTitle">
+                          <h3>{item.cardTitle}</h3>
 
-                        <div className="cardDescription">
-                          <p>{item.cardDescription}</p>
+                          <div className="cardDescription">
+                            <p>{item.cardDescription}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
