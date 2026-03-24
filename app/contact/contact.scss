@@ -1,0 +1,323 @@
+.contactPage {
+  padding: 0 0 7.8rem;
+
+  .container {
+    max-width: 140rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+
+    .breadcrumbs {
+      margin-top: 2.8rem;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          list-style: none;
+
+          &:not(:last-child)::after {
+            content: "/";
+            width: 2rem;
+            margin-left: 1.2rem;
+            display: inline-block;
+            color: #000;
+            opacity: 0.3;
+          }
+
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.026rem;
+            text-transform: uppercase;
+          }
+
+          span {
+            color: #000;
+            font-family: "Albert Sans";
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.026rem;
+            text-transform: uppercase;
+            opacity: 0.3;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+
+    .contactMain {
+      position: relative;
+      z-index: 2;
+
+      .contactTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+
+        h1 {
+          color: #000;
+          font-size: 4.8rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.096rem;
+        }
+
+        .description {
+          width: 63.1rem;
+          p {
+            color: #000;
+            text-align: center;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.8rem;
+            letter-spacing: -0.032rem;
+          }
+        }
+      }
+
+      .contactMiddle {
+        margin-top: 5.2rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        .contact {
+          display: flex;
+          gap: 8rem;
+          justify-content: space-around;
+          position: relative;
+
+          .contactItem {
+            justify-content: space-between;
+            align-items: center;
+            gap: 3.2rem;
+            display: flex;
+          }
+
+          .contactItem:nth-child(1) {
+            flex-direction: column;
+            gap: 2.3rem;
+            display: flex;
+
+            p {
+              color: #000;
+              letter-spacing: -0.032rem;
+              opacity: 0.6;
+              height: 3.6rem;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+
+            a {
+              text-decoration: none;
+              border: 1px solid #c6dbe0;
+              border-radius: 7rem;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              height: 4.4rem;
+              padding: 0 2.5rem;
+              display: flex;
+
+              img {
+                flex-shrink: 0;
+                width: 2.4rem;
+                height: 2.4rem;
+              }
+
+              span {
+                color: #0397d6;
+                letter-spacing: -0.048rem;
+                opacity: 1;
+                font-family: Albert Sans;
+                font-size: 2.4rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+            }
+          }
+
+          .contactItem:nth-child(2) {
+            flex-direction: column;
+            gap: 2.3rem;
+            display: flex;
+
+            p {
+              color: #000;
+              letter-spacing: -0.032rem;
+              opacity: 0.6;
+              height: 3.6rem;
+              font-family: Albert Sans;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+
+            a {
+              text-decoration: none;
+              border: 1px solid #c6dbe0;
+              border-radius: 7rem;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              height: 4.4rem;
+              padding: 0 2.5rem;
+              display: flex;
+
+              span {
+                color: #000;
+                letter-spacing: -0.032rem;
+                opacity: 0.6;
+                font-family: Albert Sans;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+            }
+          }
+
+          .contactItem:nth-child(3) {
+            flex-direction: column;
+            gap: 2.3rem;
+            display: flex;
+
+            p {
+              color: #000;
+              letter-spacing: -0.032rem;
+              opacity: 0.6;
+              height: 3.6rem;
+              font-family: Albert Sans;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+
+            div {
+              border: 1px solid #c6dbe0;
+              border-radius: 7rem;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              height: 4.4rem;
+              padding: 0 2.5rem;
+              display: flex;
+
+              span {
+                color: #000;
+                letter-spacing: -0.032rem;
+                opacity: 0.6;
+                font-family: Albert Sans;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+            }
+          }
+
+          .social {
+            align-items: center;
+            gap: 3.7rem;
+            display: flex;
+
+            .socials {
+              align-items: center;
+              gap: 1.44rem;
+              display: flex;
+              transition: ease 0.5s all;
+
+              a {
+                border: 0.121rem solid #c6dbe0;
+                border-radius: 50%;
+                flex-shrink: 0;
+                justify-content: center;
+                align-items: center;
+                width: 3.6407rem;
+                height: 3.468rem;
+                transition: all 0.5s ease-in-out;
+                display: flex;
+
+                &:hover {
+                  background-color: #0397d6;
+                  border-color: #0397d6;
+
+                  img {
+                    filter: brightness(0) invert(1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .contactFormMap {
+        margin-top: 17.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        .top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 1.8rem;
+
+          h3 {
+            color: #000;
+            font-size: 4.8rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 4rem;
+          }
+
+          p {
+            color: #000;
+            text-align: center;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.8rem;
+            letter-spacing: -0.032rem;
+            opacity: 0.8;
+            width: 50%;
+          }
+        }
+
+        .map {
+          width: 100%;
+          height: 57.6rem;
+          border-radius: 3rem;
+          overflow: hidden;
+
+          iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

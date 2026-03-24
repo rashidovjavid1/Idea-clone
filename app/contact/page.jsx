@@ -16,7 +16,7 @@ const page = () => {
           </ul>
         </div>
 
-        <div className="iv contactMain">
+        <div className="contactMain">
           <div className="contactTop">
             <h1>Contact</h1>
             <div className="description">
