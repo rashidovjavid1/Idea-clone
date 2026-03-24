@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div className="aboutPage">
       <div className="container">
-        <div className="breadCrumb">
+        <div className="breadcrumbs">
           <ul>
             <li>
               <a href="">IDEA</a>

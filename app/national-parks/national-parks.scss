@@ -1,10 +1,11 @@
-.nationalParks {
-  padding: 0 7.8rem;
+.resources {
+  padding: 0 0 0 17rem;
   .container {
     max-width: 140rem;
-    margin: 0 auto;
-    padding: 0 2rem;
-    .breadcrumb {
+    margin: 0;
+    padding: 0;
+
+    .breadcrumbs {
       margin-top: 2.8rem;
       ul {
         display: flex;
@@ -51,12 +52,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-      }
-    }
-    .nationalParksMain {
-      margin-top: 7.3rem;
-
-      .nationalParksLeft {
       }
     }
   }

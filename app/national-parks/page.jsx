@@ -3,9 +3,9 @@ import { nationalParks } from "../constants/nationalParks";
 
 const page = () => {
   return (
-    <div className="nationalParks">
+    <div className="resources">
       <div className="container">
-        <div className="breadCrumb">
+        <div className="breadcrumbs">
           <ul>
             <li>
               <a href="">IDEA</a>
@@ -15,9 +15,9 @@ const page = () => {
             </li>
           </ul>
         </div>
-        <div className="nationalParksMain">
+        <div className="resourcesMain">
           <h1>The Natural Wealth of Azerbaijan</h1>
-          <div className="nationalParksTop">
+          <div className="resourcesTop">
             <div className="nationalParksBannerLeft">
               <div className="pageBanner">
                 <img
@@ -46,12 +46,16 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="nationalParksBottom">
+        </div>
+        <div className="resourcesBottom">
+          <div className="container">
+            <div className="resourcesFilter">
+              <button type="button">List View</button>
+              <button type="button">Map view</button>
+            </div>
+          </div>
+          <div className="resourcesBottomMain">
             <div className="container">
-              <div className="nationalParksFilter">
-                <button type="button">List View</button>
-                <button type="button">Map view</button>
-              </div>
               <div className="resourceCards">
                 <div className="container">
                   {nationalParks.map((item, index) => (
