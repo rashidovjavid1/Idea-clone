@@ -114,7 +114,11 @@ const page = () => {
           <div className="contactFormMap">
             <div className="top">
               <h3>Our Location</h3>
-              <p>Find us easily using the map below.</p>
+              <p>
+                For collaborations and proposals, we’re open to your ideas and
+                opportunities. Share your thoughts with us and let’s create
+                something valuable together
+              </p>
             </div>
             <div className="map">
               <iframe

@@ -371,6 +371,33 @@
                 }
               }
             }
+
+            button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 2.8rem;
+              border-color: transparent;
+              width: 50.4rem;
+              height: 5.8rem;
+              border-radius: 10rem;
+              background: #0faedd;
+
+              span {
+                color: #fff;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 3.9231rem;
+                letter-spacing: 0.112rem;
+                text-transform: uppercase;
+              }
+
+              svg {
+                width: 1.858rem;
+                height: 0.9rem;
+              }
+            }
           }
         }
       }
@@ -380,6 +407,7 @@
         display: flex;
         flex-direction: column;
         gap: 3.5rem;
+        margin-bottom: 5.7rem;
         .top {
           display: flex;
           justify-content: center;
