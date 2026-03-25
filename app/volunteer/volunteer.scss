@@ -1,0 +1,62 @@
+.volunteerPage {
+  padding: 0 0 7.8rem;
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .breadcrumbs {
+      margin-top: 2.8rem;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        li {
+          list-style: none;
+
+          &:not(:last-child)::after {
+            content: "/";
+            width: 2rem;
+            margin-left: 1.2rem;
+            display: inline-block;
+            color: #000;
+            opacity: 0.3;
+          }
+
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.026rem;
+            text-transform: uppercase;
+          }
+
+          span {
+            color: #000;
+            font-family: "Albert Sans";
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.026rem;
+            text-transform: uppercase;
+            opacity: 0.3;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+
+    .volunteerForm {
+      margin-top: 11.3rem;
+    }
+  }
+}

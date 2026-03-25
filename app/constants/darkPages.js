@@ -4,4 +4,9 @@ export const darkPages = [
   "/national-parks",
   "/media",
   "/contact",
+  "/volunteer",
+  "/reports",
+  "/insights",
+  "/interesting-facts",
+  "/eco-calendar",
 ];
