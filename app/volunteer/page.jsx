@@ -4,11 +4,12 @@ import { useState } from "react";
 import "./volunteer.scss";
 import Upload from "@/public/upload.svg";
 import ChevronDown from "@/public/chevronDown.svg";
+import CustomSelectBar from "../components/CustomSelectBar";
+import CustomCheckbox from "../components/CustomCheckbox";
+import CustomSingleCheckbox from "../components/CustomSingleCheckbox";
+import ArrowRight from "@/public/arrowRight.svg";
 
 const page = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState("");
-  const cities = ["Baku", "Ganja", "Sumgayit", "Sheki"];
   return (
     <div className="volunteerPage">
       <div className="container">
@@ -29,79 +30,113 @@ const page = () => {
             <div className="information">
               <h3>1. Personal Information</h3>
               <div className="inputs">
-                <label>Name and surname</label>
-                <div className="input">
-                  <input
-                    type="text"
-                    placeholder="Enter your name and surname"
-                  />
+                <div className="inputContainer">
+                  <label>Name and surname</label>
+                  <div className="input">
+                    <input
+                      type="text"
+                      placeholder="Enter your name and surname"
+                    />
+                  </div>
                 </div>
 
-                <label>Gender</label>
-                <div className="inputGender">
-                  <button type="button" className="female">
-                    Female
-                  </button>
-                  <button type="button" className="male">
-                    Male
-                  </button>
+                <div className="inputContainer">
+                  <label>Gender</label>
+                  <div className="inputGender">
+                    <button type="button" className="female">
+                      Female
+                    </button>
+                    <button type="button" className="male">
+                      Male
+                    </button>
+                  </div>
                 </div>
 
-                <label>Phone number</label>
-                <div className="input">
-                  <input type="number" placeholder="Enter your phone number" />
+                <div className="inputContainer">
+                  <label>Phone number</label>
+                  <div className="input">
+                    <input
+                      type="number"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
                 </div>
 
-                <label>Date of Birth</label>
-                <div className="input">
-                  <input type="number" placeholder="Enter your Birth date" />
+                <div className="inputContainer">
+                  <label>Date of Birth</label>
+                  <div className="input">
+                    <input type="text" placeholder="Enter your Birth date" />
+                  </div>
                 </div>
 
-                <label>Email</label>
-                <div className="input">
-                  <input type="text" placeholder="Enter your email" />
+                <div className="inputContainer">
+                  <label>Email</label>
+                  <div className="input">
+                    <input type="text" placeholder="Enter your email" />
+                  </div>
                 </div>
 
-                <div className="upload">
-                  <label>
-                    <Upload />
-                    <p>Upload CV</p>
-                    <span>Max size: 10MB (PDF, DOC, DOCX)</span>
-                  </label>
+                <div className="inputContainer">
+                  <div className="upload">
+                    <label>
+                      <Upload />
+                      <p>Upload CV</p>
+                      <span>Max size: 10MB (PDF, DOC, DOCX)</span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="informationLocation">
               <p>Location and Availability</p>
               <div className="inputs">
-                <div className="input">
+                <div className="inputContainer">
                   <label>City - Region</label>
-                  <div className="dropdown" onClick={() => setIsOpen(!isOpen)}>
-                    <span>{selected || "City Region"}</span>
-                    <ChevronDown />
-
-                    {isOpen && (
-                      <ul className="option">
-                        {cities.map((city) => (
-                          <li
-                            key={city}
-                            onClick={() => {
-                              setSelected(city);
-                              setIsOpen(false);
-                            }}
-                          >
-                            {city}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                  <div className="input">
+                    <CustomSelectBar />
                   </div>
                 </div>
-                <div className="input">
+                <div className="inputContainer">
                   <label>Preferred volunteering location</label>
-                  <div className="input"></div>
+                  <div className="input">
+                    <CustomSelectBar />
+                  </div>
+                </div>
+                <div className="inputContainer">
+                  <label>Availability</label>
+                  <div className="input">
+                    <button type="button">
+                      <span>Weekdays</span>
+                    </button>
+                    <button type="button">
+                      <span>Weekends</span>
+                    </button>
+                    <button type="button">
+                      <span>Full-time</span>
+                    </button>
+                    <button type="button">
+                      <span>Part-time</span>
+                    </button>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className="informationInterests">
+              <div className="inputContainer">
+                <label>Areas of interests</label>
+                <div className="input">
+                  <CustomCheckbox />
+                </div>
+              </div>
+            </div>
+            <div className="agree">
+              <label>
+                <CustomSingleCheckbox />
+                <button>
+                  <span>SUBMIT APPLICATION</span>
+                  <ArrowRight />
+                </button>
+              </label>
             </div>
           </form>
         </div>
