@@ -388,10 +388,13 @@
         }
 
         .agree {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
+          border-top: 1px solid #000;
+          padding: 2rem;
+
           label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: #000;
             font-variant-numeric: lining-nums tabular-nums;
             font-family: "Albert Sans";
@@ -407,6 +410,9 @@
               border-radius: 10rem;
               background: #0faedd;
               border-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: center;
 
               span {
                 color: #fff;
