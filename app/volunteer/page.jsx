@@ -28,7 +28,7 @@ const page = () => {
           </div>
           <form>
             <div className="information">
-              <h3>1. Personal Information</h3>
+              <p>Personal Information</p>
               <div className="inputs">
                 <div className="inputContainer">
                   <label>Name and surname</label>
@@ -78,9 +78,9 @@ const page = () => {
 
                 <div className="inputContainer">
                   <div className="upload">
-                    <label>
+                    <label className="label-upload">
                       <Upload />
-                      <p>Upload CV</p>
+                      <p className="uploadText">Upload CV</p>
                       <span>Max size: 10MB (PDF, DOC, DOCX)</span>
                     </label>
                   </div>
@@ -104,7 +104,7 @@ const page = () => {
                 </div>
                 <div className="inputContainer">
                   <label>Availability</label>
-                  <div className="input">
+                  <div className="weekdays">
                     <button type="button">
                       <span>Weekdays</span>
                     </button>
@@ -122,9 +122,10 @@ const page = () => {
               </div>
             </div>
             <div className="informationInterests">
-              <div className="inputContainer">
-                <label>Areas of interests</label>
-                <div className="input">
+              <p>Areas of interests</p>
+              <div className="checkBoxes">
+                <p>Areas of interests</p>
+                <div className="checkBoxItem">
                   <CustomCheckbox />
                 </div>
               </div>

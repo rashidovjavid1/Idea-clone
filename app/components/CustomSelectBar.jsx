@@ -5,9 +5,16 @@ const handleChange = (value) => {
 };
 const App = () => (
   <Select
+    className="custom-select"
     labelInValue
     defaultValue={{ value: "select", label: "Select" }}
-    style={{ width: 120 }}
+    style={{
+      width: "100%",
+      borderColor: "#BBDCE6",
+      height: "5.7rem",
+      borderRadius: "10rem",
+      padding: "2rem",
+    }}
     onChange={handleChange}
     options={[
       {
