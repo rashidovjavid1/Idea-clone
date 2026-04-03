@@ -1,8 +1,23 @@
+"use client";
 import "./support.scss";
 import CustomCheckbox from "../components/CustomCheckbox";
-import React from "react";
 
 const page = () => {
+  const agreeOption = [
+    { label: "Agree to continue", value: "Agree to continue" },
+  ];
+  const partnerOptions = [
+    { label: "Tree planting", value: "Tree planting" },
+    { label: "Beach clean-up", value: "Beach clean-up" },
+    { label: "Educational workshop", value: "Educational workshop" },
+    { label: "Wildlife conservation", value: "Wildlife conservation" },
+    { label: "Event organization", value: "Event organization" },
+    {
+      label: "Social media content creation",
+      value: "Social media content creation",
+    },
+  ];
+
   return (
     <div className="supportInner">
       <div className="container">
@@ -78,8 +93,13 @@ const page = () => {
                     <p>Areas of interest</p>
                     <div className="checkboxes">
                       <p>Areas of interest</p>
-                      <div className="checkBoxes"></div>
+                      <div className="checkBoxes">
+                        <CustomCheckbox options={partnerOptions} />
+                      </div>
                     </div>
+                  </div>
+                  <div className="agree">
+                    <CustomCheckbox options={agreeOption} />
                   </div>
                 </form>
               </div>
