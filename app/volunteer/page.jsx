@@ -6,10 +6,23 @@ import Upload from "@/public/upload.svg";
 import ChevronDown from "@/public/chevronDown.svg";
 import CustomSelectBar from "../components/CustomSelectBar";
 import CustomCheckbox from "../components/CustomCheckbox";
-import CustomSingleCheckbox from "../components/CustomSingleCheckbox";
 import ArrowRight from "@/public/arrowRight.svg";
 
 const page = () => {
+  const agreeOption = [
+    { label: "Agree to continue", value: "Agree to continue" },
+  ];
+  const partnerOption = [
+    { label: "Tree planting", value: "Tree planting" },
+    { label: "Beach clean-up", value: "Beach clean-up" },
+    { label: "Educational workshop", value: "Educational workshop" },
+    { label: "Wildlife conservation", value: "Wildlife conservation" },
+    { label: "Event organization", value: "Event organization" },
+    {
+      label: "Social media content creation",
+      value: "Social media content creation",
+    },
+  ];
   return (
     <div className="volunteerPage">
       <div className="container">
@@ -126,13 +139,13 @@ const page = () => {
               <div className="checkBoxes">
                 <p>Areas of interests</p>
                 <div className="checkBoxItem">
-                  <CustomCheckbox />
+                  <CustomCheckbox options={partnerOption} />
                 </div>
               </div>
             </div>
             <div className="agree">
               <label>
-                <CustomSingleCheckbox />
+                <CustomCheckbox options={agreeOption} />
                 <button>
                   <span>SUBMIT APPLICATION</span>
                   <ArrowRight />
