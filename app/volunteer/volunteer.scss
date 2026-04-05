@@ -369,6 +369,12 @@
               opacity: 0.5;
             }
 
+            .checkBoxGroup {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            }
+
             .checkBoxItem {
               display: flex;
               flex-direction: column;
@@ -388,6 +394,7 @@
         }
 
         .agree {
+          margin-top: 3rem;
           border-top: 1px solid #000;
           padding: 2rem;
 

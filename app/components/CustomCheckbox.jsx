@@ -2,7 +2,7 @@ import React from "react";
 import { Checkbox } from "antd";
 
 const CustomCheckbox = ({ options, onChange }) => (
-  <Checkbox.Group onChange={onChange}>
+  <Checkbox.Group onChange={onChange} className="checkBoxGroup">
     {options.map((opt) => (
       <Checkbox
         key={opt.value}
@@ -10,7 +10,6 @@ const CustomCheckbox = ({ options, onChange }) => (
         style={{
           color: "#000",
           opacity: "1",
-          padding: "1rem 2rem",
           fontSize: "1.5rem",
           margin: "0",
         }}
