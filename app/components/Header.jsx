@@ -8,11 +8,15 @@ import Link from "next/link";
 import HeaderLogo from "@/public/headerLogo.svg";
 import LanguageIcon from "@/public/language.svg";
 import SearchIcon from "@/public/search.svg";
+import { hiderPages } from "../constants/hiderPages";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
   const pathName = usePathname();
   const isDark = darkPages.includes(pathName);
+  const isHidden = hiderPages.includes(pathName);
+
+  if (isHidden) return null;
   return (
     <header className={`${isDark ? "header--dark" : ""}`}>
       <div className="container">

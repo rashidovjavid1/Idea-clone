@@ -10,4 +10,5 @@ export const darkPages = [
   "/interesting-facts",
   "/eco-calendar",
   "/support",
+  "/search",
 ];

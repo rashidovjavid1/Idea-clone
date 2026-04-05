@@ -1,0 +1,89 @@
+.searchPage {
+  background: #fff;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+  height: 100dvh;
+
+  &::before {
+    height: 90dvh;
+    background: url(/icons/ellipsis.svg) no-repeat 50%;
+    transform: rotate(-90deg);
+    left: -60rem;
+  }
+
+  .searchMain {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+
+    button {
+      background: transparent;
+      border-color: transparent;
+      position: absolute;
+      width: 5.7rem;
+      height: 5.7rem;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 50%;
+      top: 2rem;
+      right: 2rem;
+      z-index: 10;
+      border: 1px solid #d4e5e9;
+
+      svg {
+        object-fit: cover;
+        width: 2.4255rem;
+        height: 2.4255rem;
+        flex-shrink: 0;
+      }
+    }
+
+    .searchInputMain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100dvh;
+
+      .searchInput {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2.9rem;
+        border-bottom: 1px solid #0faedd;
+        padding-bottom: 1.9rem;
+
+        svg {
+          width: 4rem;
+          height: 4rem;
+          color: #0faedd;
+        }
+
+        input {
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 100%;
+          text-align: center;
+          color: #000;
+          font-size: 4.8rem;
+          font-weight: 600;
+          letter-spacing: -0.096rem;
+
+          input::placeholder {
+            color: #000;
+            text-align: center;
+            font-size: 4.8rem;
+            font-weight: 600;
+            letter-spacing: -0.096rem;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+}
