@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
+import "./projects.scss";
 import { projectsCategories } from "../constants/projectsCategories";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -8,25 +10,26 @@ const page = () => {
       <div className="container">
         <div className="breadcrumbs">
           <ul>
-            <a href="/">
-              <li>IDEA</li>
-              <li>PROJECTS</li>
-            </a>
+            <li>
+              <Link href="/"> IDEA </Link>
+            </li>
+
+            <li>PROJECTS</li>
           </ul>
         </div>
         <div className="projectsMain">
-          <div className="topTitle">
-            <h1>EXPLORE OUR PROJECTS</h1>
-          </div>
+          <h1>Explore Our Projects</h1>
           <div className="categories">
             <div className="category">
               <span>All</span>
             </div>
             {projectsCategories.map((item, index) => (
-              <div className="category">
-                <img src={item.icon} alt={item.label} />
+              <button className="category">
+                <div className="image">
+                  <img src={item.icon} alt={item.label} />
+                </div>
                 <span>{item.label}</span>
-              </div>
+              </button>
             ))}
           </div>
         </div>
