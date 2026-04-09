@@ -3,6 +3,8 @@ import React from "react";
 import "./projects.scss";
 import { projectsCategories } from "../constants/projectsCategories";
 import Link from "next/link";
+import { projectCard } from "../constants/projectCard";
+import Calendar from "@/public/calendar.svg";
 
 const page = () => {
   return (
@@ -30,6 +32,26 @@ const page = () => {
                 </div>
                 <span>{item.label}</span>
               </button>
+            ))}
+          </div>
+          <div className="projectCards">
+            {projectCard.map((item, index) => (
+              <div className="projectCard">
+                <div className="projectImage">
+                  <img src={item.image} alt={item.label} />
+                </div>
+                <div className="projectCardContent">
+                  <div className="title">
+                    <h3>{item.label}</h3>
+                  </div>
+                  <div className="date">
+                    <span>
+                      <Calendar />
+                      {item.date}
+                    </span>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
