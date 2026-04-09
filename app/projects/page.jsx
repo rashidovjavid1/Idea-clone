@@ -5,6 +5,7 @@ import { projectsCategories } from "../constants/projectsCategories";
 import Link from "next/link";
 import { projectCard } from "../constants/projectCard";
 import Calendar from "@/public/calendar.svg";
+import Footer from "../components/Footer";
 
 const page = () => {
   return (
@@ -56,6 +57,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
