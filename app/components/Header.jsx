@@ -60,6 +60,11 @@ const Header = () => {
               </div>
             </div>
           </div>
+          <button className="hamburger" onClick={() => setOpenNav(!openNav)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>

@@ -8,6 +8,8 @@ html {
   box-sizing: border-box;
 }
 
+/* WEB */
+
 header {
   position: absolute;
   width: 100%;
@@ -203,6 +205,7 @@ header {
     }
   }
 }
+
 header.header--dark {
   position: static;
 
@@ -1699,6 +1702,50 @@ footer {
                 width: 2.6rem;
                 height: 0.8rem;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    .container {
+      padding: 0;
+      margin: 0;
+      .headerMain {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .headerLogo {
+          width: 24.5rem;
+          height: 6.8833rem;
+          svg {
+            width: 100%;
+            transform: scale(0.8);
+            height: auto;
+          }
+        }
+
+        nav {
+          display: none;
+        }
+
+        .headerRight {
+          .leftItems {
+            display: none !important;
+          }
+
+          .rightItems {
+            .languageChanger {
+              display: none !important;
             }
           }
         }
