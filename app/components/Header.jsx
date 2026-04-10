@@ -50,7 +50,7 @@ const Header = () => {
             </div>
             <div className="rightItems">
               <Link href="/search">
-                <SearchIcon />
+                <SearchIcon className="searchIcon" />
               </Link>
               <div className="languageChanger">
                 <button type="button" className="languageChanger">

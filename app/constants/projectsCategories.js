@@ -15,10 +15,10 @@ export const projectsCategories = [
   },
   {
     icon: "/advocation.svg",
-    label: "Education and Training",
+    label: "Advocacy and Public Awareness",
   },
   {
-    icon: "/advocation.svg",
+    icon: "/trees.svg",
     label: "Advocacy and Public Awareness",
   },
 

@@ -9,10 +9,16 @@ import Footer from "../components/Footer";
 
 const page = () => {
   const [activeCategory, setActiveCategory] = useState("All");
-  const filteredCards =
-    activeCategory === "All"
-      ? projectCard
-      : projectCard.filter((card) => card.category === activeCategory);
+  const isActive = (label) => activeCategory === label;
+  let filteredCards;
+
+  if (activeCategory === "All") {
+    filteredCards = projectCard;
+  } else {
+    filteredCards = projectCard.filter(
+      (card) => card.category === activeCategory,
+    );
+  }
   return (
     <div className="projectsInner">
       <div className="container">
@@ -30,7 +36,7 @@ const page = () => {
           <div className="categories">
             <div
               onClick={() => setActiveCategory("All")}
-              className={`category ${activeCategory === "All" ? "active" : ""}`}
+              className={`category ${isActive("All") ? "active" : ""}`}
             >
               <span>All</span>
             </div>

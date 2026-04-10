@@ -178,6 +178,11 @@ header {
           justify-content: flex-end;
           align-items: center;
           gap: 2.2rem;
+
+          .searchIcon {
+            color: white;
+          }
+
           .languageChanger {
             cursor: pointer;
             display: flex;
