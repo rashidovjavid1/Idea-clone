@@ -9,6 +9,7 @@ import HeaderLogo from "@/public/headerLogo.svg";
 import LanguageIcon from "@/public/language.svg";
 import SearchIcon from "@/public/search.svg";
 import { hiderPages } from "../constants/hiderPages";
+import Hamburger from "@/public/hamburger.svg";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -52,6 +53,12 @@ const Header = () => {
               <Link href="/search">
                 <SearchIcon className="searchIcon" />
               </Link>
+              <button
+                className="hamburger"
+                onClick={() => setOpenNav(!openNav)}
+              >
+                <Hamburger />
+              </button>
               <div className="languageChanger">
                 <button type="button" className="languageChanger">
                   <LanguageIcon />
@@ -60,11 +67,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <button className="hamburger" onClick={() => setOpenNav(!openNav)}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
         </div>
       </div>
     </header>

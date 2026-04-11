@@ -1718,19 +1718,24 @@ footer {
 
   header {
     .container {
-      padding: 0;
-      margin: 0;
+      height: 0;
+      margin-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .headerMain {
+        padding: 2rem 0;
+        width: 36.2rem;
+        height: 8.7rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         .headerLogo {
-          width: 24.5rem;
-          height: 6.8833rem;
+          padding: 0;
+          aspect-ratio: 245/688;
           svg {
             width: 100%;
             transform: scale(0.8);
-            height: auto;
           }
         }
 
@@ -1739,16 +1744,52 @@ footer {
         }
 
         .headerRight {
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           .leftItems {
             display: none !important;
           }
 
           .rightItems {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: space-between;
+            padding: 1rem;
+
+            .searchIcon {
+              aspect-ratio: 24/24;
+
+              svg {
+                width: 100%;
+              }
+            }
+            .hamburger {
+              aspect-ratio: 28/28;
+              border-color: transparent;
+              background-color: transparent;
+            }
             .languageChanger {
               display: none !important;
             }
           }
         }
+      }
+    }
+  }
+
+  .heroSection {
+    .video {
+      width: 43rem;
+      height: 86rem;
+      overflow: hidden;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
