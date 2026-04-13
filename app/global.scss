@@ -1423,15 +1423,20 @@ footer {
                 align-items: center;
                 gap: 0.4rem;
                 display: flex;
-                color: #000;
-                font-size: 1.3rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                letter-spacing: 0.013rem;
-                gap: 1rem;
                 border-color: transparent;
                 background-color: transparent;
+
+                span {
+                  background-color: transparent;
+                  border-radius: none;
+                  color: #000;
+                  font-size: 1.3rem;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.013rem;
+                  gap: 1rem;
+                }
 
                 img {
                   box-sizing: border-box;
@@ -2132,6 +2137,32 @@ footer {
   }
 }
 
+.ourPartnersSection {
+  .container {
+    .ourPartnersSectionMain {
+      .ourPartnersSectionTitle {
+        h2 {
+          color: #000;
+          font-size: 3.2rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.064rem;
+
+          span {
+            color: rgba(136, 136, 136, 0.53);
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.064rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 .joinUsSection {
   .container {
     margin: 0;
@@ -2273,6 +2304,129 @@ footer {
 footer {
   .container {
     .footerMain {
+      gap: 4.4rem;
+      padding: 0;
+      .footerTop {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        .footerLogo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 13.2rem;
+          height: 15.2rem;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .footerTopRight {
+          gap: 4.9rem;
+          .top {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 0;
+            border-top: 0;
+            margin-top: 0;
+            padding: 0;
+            gap: 3rem;
+            nav {
+              display: grid;
+              grid-template-columns: 2fr 2fr;
+              text-wrap: nowrap;
+            }
+
+            .languageChanger {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 1rem;
+
+              button {
+                span {
+                  opacity: 0.6;
+                }
+              }
+            }
+          }
+          .bottom {
+            display: flex;
+            flex-direction: column;
+
+            .contact {
+              gap: 2.3rem;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+
+              .contactItem:nth-child(3) {
+                text-wrap: nowrap;
+                width: fit-content;
+                gap: 0.7rem;
+              }
+
+              .contactItem:nth-child(2) {
+                text-wrap: nowrap;
+                gap: 0.7rem;
+              }
+
+              .contactItem:nth-child(1) {
+                text-wrap: nowrap;
+                gap: 0.7rem;
+              }
+              .contactItem {
+                gap: 0.7rem;
+                p {
+                  color: #000;
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                  letter-spacing: -0.028rem;
+                }
+
+                a {
+                  span {
+                    color: #000;
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: -0.028rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .footerBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem;
+        width: 40rem;
+
+        .copyRight {
+          width: fit-content;
+
+          p {
+            color: #000;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 114%;
+          }
+        }
+
+        .developedBy {
+          margin-top: 3.2rem;
+        }
+      }
     }
   }
 }

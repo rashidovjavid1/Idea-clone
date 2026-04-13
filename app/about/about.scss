@@ -552,3 +552,116 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .aboutPage {
+    .container {
+      .breadcrumbs {
+        margin-top: 8rem;
+      }
+
+      .aboutPageMain {
+        .aboutDetails {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .left {
+            width: 100%;
+            margin-top: 2rem;
+            padding-top: 0;
+            span {
+              color: #0faedd;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: -0.032rem;
+            }
+
+            .text {
+              width: 33.3rem;
+              height: auto;
+              margin-top: 2rem;
+
+              h2 {
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -0.064rem;
+
+                strong {
+                  color: #000;
+                  font-size: 3.2rem;
+                  font-style: normal;
+                  font-weight: 800;
+                  line-height: normal;
+                  letter-spacing: -0.064rem;
+                }
+
+                p {
+                  color: #000;
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 2.5rem;
+                  letter-spacing: -0.028rem;
+                }
+              }
+            }
+
+            .bigIdeaItems {
+              margin-top: 2rem;
+
+              .bigIdeaItem {
+                gap: 1.4rem;
+
+                .bigIdeaItem {
+                  gap: 2.21rem;
+                  display: grid;
+                  grid-template-columns: 2fr 2fr;
+                  align-items: center;
+
+                  .ideaIcon {
+                    width: 3.1358rem;
+                    height: 3.1358rem;
+                    align-items: center;
+                    display: flex;
+
+                    img {
+                      aspect-ratio: 36/36;
+                      transform: scale(0.7);
+                    }
+                  }
+                  .ideaDescription {
+                    padding: 0 1.5rem;
+
+                    span {
+                      color: #000;
+                      font-size: 2.2806rem;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: normal;
+                      letter-spacing: -0.0456rem;
+                    }
+
+                    p {
+                      color: #000;
+                      font-family: "Albert Sans";
+                      font-size: 1.1403rem;
+                      font-style: normal;
+                      font-weight: 500;
+                      line-height: 1.7817rem;
+                      letter-spacing: -0.0228rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

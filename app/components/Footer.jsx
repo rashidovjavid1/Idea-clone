@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className="languageChanger">
                   <button type="button">
                     <img src="/language.svg" alt="Language Changer" />
-                    AZ
+                    <span>AZ / EN</span>
                   </button>
                 </div>
               </div>
