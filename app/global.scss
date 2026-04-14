@@ -2138,6 +2138,8 @@ footer {
 }
 
 .ourPartnersSection {
+  padding: 0;
+  margin-top: 2rem;
   .container {
     .ourPartnersSectionMain {
       .ourPartnersSectionTitle {
@@ -2173,6 +2175,7 @@ footer {
       align-items: center;
 
       .joinUsVolunteerCard {
+        margin-top: 0;
         align-items: center;
         justify-content: center;
         display: flex;
