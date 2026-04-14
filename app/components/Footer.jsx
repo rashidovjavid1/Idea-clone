@@ -73,7 +73,9 @@ const Footer = () => {
           </div>
           <div className="footerBottom">
             <div className="copyRight">
-              <p>Copyright © 2026 IDEA. All rights reserved.</p>
+              <p>
+                Copyright © 2026 <strong>IDEA</strong>. All rights reserved.
+              </p>
             </div>
             <div className="privacyPolicy">
               <Link href="/privacy">Privacy policy</Link>

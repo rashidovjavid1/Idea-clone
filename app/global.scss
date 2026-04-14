@@ -2411,11 +2411,15 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 3rem;
         width: 40rem;
+        padding: 2rem;
 
         .copyRight {
-          width: fit-content;
+          width: 20rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
 
           p {
             color: #000;
@@ -2424,6 +2428,10 @@ footer {
             font-weight: 500;
             line-height: 114%;
           }
+        }
+
+        .privacyPolicy {
+          margin-top: 2rem;
         }
 
         .developedBy {
