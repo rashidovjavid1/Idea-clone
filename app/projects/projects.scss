@@ -273,25 +273,49 @@
         }
 
         .projectCards {
+          width: 100%;
+          align-items: center;
           display: grid;
           grid-template-columns: 2fr 2fr;
-          width: 100%;
 
           .projectCard {
-            width: 18rem;
-            height: 15.1rem;
+            padding: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
 
             .projectCardContent {
+              max-width: 100%;
               display: flex;
               align-items: center;
-              justify-content: flex-start;
+              flex-direction: column;
+              padding: 1rem;
+
               .title {
+                width: 14.4rem;
                 h3 {
                   font-size: 1.4rem;
                   font-style: normal;
                   font-weight: 700;
                   line-height: 1.6rem;
                   letter-spacing: -0.028rem;
+                }
+              }
+
+              .date {
+                display: flex;
+                align-items: center;
+                width: 11.2721rem;
+                height: 3.0059rem;
+                span {
+                  text-wrap: nowrap;
+                  color: #fff;
+                  font-size: 1.002rem;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                  letter-spacing: -0.02rem;
                 }
               }
             }
