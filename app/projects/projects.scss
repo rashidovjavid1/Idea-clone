@@ -226,3 +226,78 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .projectsInner {
+    .container {
+      .breadcrumbs {
+        margin-top: 8rem;
+      }
+
+      .projectsMain {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        gap: 3rem;
+        h1 {
+          width: 30rem;
+          color: #000;
+          font-size: 3.2rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.064rem;
+        }
+
+        .categories {
+          margin: 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          width: 100%;
+
+          .category {
+            width: 100%;
+            span {
+              text-wrap: nowrap;
+              color: #000;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1.6rem;
+              letter-spacing: -0.028rem;
+            }
+          }
+        }
+
+        .projectCards {
+          display: grid;
+          grid-template-columns: 2fr 2fr;
+          width: 100%;
+
+          .projectCard {
+            width: 18rem;
+            height: 15.1rem;
+
+            .projectCardContent {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              .title {
+                h3 {
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 1.6rem;
+                  letter-spacing: -0.028rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

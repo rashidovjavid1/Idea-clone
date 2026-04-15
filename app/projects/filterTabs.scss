@@ -1,0 +1,33 @@
+.swiper {
+  width: 100%;
+  padding: 8px 16px !important;
+}
+
+.slide {
+  width: auto !important;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  font-size: 14px;
+
+  img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+
+  &.active {
+    background: #00b4d8;
+    color: #fff;
+    border-color: #00b4d8;
+  }
+}
