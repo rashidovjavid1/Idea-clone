@@ -9,10 +9,11 @@ import HeaderLogo from "@/public/headerLogo.svg";
 import LanguageIcon from "@/public/language.svg";
 import SearchIcon from "@/public/search.svg";
 import { hiderPages } from "../constants/hiderPages";
-import Hamburger from "@/public/hamburger.svg";
+import Hamburger from "./Hamburger";
 
-const Header = () => {
+const Header = ({ onOpen }) => {
   const [openNav, setOpenNav] = useState(false);
+  const toggleNav = () => setOpenNav((prev) => !prev);
   const pathName = usePathname();
   const isDark = darkPages.includes(pathName);
   const isHidden = hiderPages.includes(pathName);
@@ -53,12 +54,7 @@ const Header = () => {
               <Link href="/search">
                 <SearchIcon className="searchIcon" />
               </Link>
-              <button
-                className="hamburger"
-                onClick={() => setOpenNav(!openNav)}
-              >
-                <Hamburger />
-              </button>
+              <Hamburger isOpen={openNav} onOpen={toggleNav} />
               <div className="languageChanger">
                 <button type="button" className="languageChanger">
                   <LanguageIcon />
