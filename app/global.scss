@@ -187,6 +187,10 @@ header {
           align-items: center;
           gap: 2.2rem;
 
+          .hamburgerMenu {
+            display: none;
+          }
+
           .searchIcon {
             color: white;
           }
