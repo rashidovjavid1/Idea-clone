@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "antd": "^6.3.6",
     "axios": "^1.15.1",
     "eslint": "^10.0.3",
     "leaflet": "^1.9.4",
