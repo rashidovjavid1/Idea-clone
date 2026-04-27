@@ -11,7 +11,7 @@ export const fetchSSRData = async (endpoint) => {
     });
     return data;
   } catch (error) {
-    console.error(`Xəta: ${endpoint}`, error);
+    console.error(`Error: ${endpoint}`, error);
     throw error;
   }
 };

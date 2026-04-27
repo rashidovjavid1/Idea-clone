@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.100.5",
     "antd": "^6.3.6",
     "axios": "^1.15.1",
     "eslint": "^10.0.3",

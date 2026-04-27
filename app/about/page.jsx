@@ -6,7 +6,7 @@ import { coreCards } from "../constants/coreCards";
 import OurPartners from "../components/OurPartners";
 import JoinUs from "../components/JoinUs";
 import Footer from "../components/Footer";
-import { fetchSSRData } from "../Hooks/useFetchData";
+import { fetchSSRData } from "../hooks/useFetchData";
 
 const page = async () => {
   const response = await fetchSSRData("/page-data/about");
